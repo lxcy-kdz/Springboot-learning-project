@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot-redis-cluster
+  redis:
+    cluster:
+      nodes: 172.16.6.230:10000,172.16.6.230:10001,172.16.6.230:10002
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        min-idle: 0
+        max-idle: 8
+    timeout: 6000ms
+    database: 0
