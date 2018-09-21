@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vpiaotong.springboot.dao.area.mapper.IInvoiceAreaMapper">
+  <resultMap id="BaseResultMap" type="com.vpiaotong.springboot.entity.InvoiceArea">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id,area,code
+  </sql>
+  <select id="selectAll" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM oc_invoice_area
+  </select>
+</mapper>
