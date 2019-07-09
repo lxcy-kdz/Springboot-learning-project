@@ -9,6 +9,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringbootRedisApplication {
 
+    /*
+    *  rhtest 不要的
+    * */
+
+    /**
+     *  rhtest 要的
+     * @param args
+     */
     public static void main(String[] args) {
         SpringApplication.run(SpringbootRedisApplication.class, args);
     }
