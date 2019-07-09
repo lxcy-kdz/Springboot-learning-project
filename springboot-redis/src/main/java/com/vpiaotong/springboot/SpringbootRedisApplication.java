@@ -10,11 +10,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootRedisApplication {
 
     /*
-    *  rhtest 不要的
+    *  rhtest 不要的ghjkl;
     * */
 
     /**
-     *  rhtest 要的
+     *  rhtest 要的thijo
      * @param args
      */
     public static void main(String[] args) {
