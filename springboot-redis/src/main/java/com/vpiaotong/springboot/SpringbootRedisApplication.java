@@ -13,7 +13,7 @@ public class SpringbootRedisApplication {
      * dev 要的
      */
     /**
-     *  dev 不要的
+     *  rhtest 要的
      * @param args
      */
     public static void main(String[] args) {
