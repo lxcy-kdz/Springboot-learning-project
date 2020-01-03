@@ -2,9 +2,17 @@ spring:
   application:
     name: springboot-rabbitmq-sender
   rabbitmq:
-    host: 47.98.34.59
+    host: 192.168.50.103
     port: 5672
-    username: abc
-    password: abc
+    username: guest
+    password: guest
     publisher-confirms: true
     virtual-host: /
+    publisher-returns: false
+    listener:
+      direct:
+        acknowledge-mode: manual
+      simple:
+        acknowledge-mode: manual
+server:
+  port: 8096

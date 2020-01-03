@@ -1,15 +1,24 @@
 package com.vpiaotong;
 
-import org.springframework.amqp.core.Binding;
-import org.springframework.amqp.core.BindingBuilder;
-import org.springframework.amqp.core.Queue;
-import org.springframework.amqp.core.TopicExchange;
+import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * @author lxcy_
+ */
 @Configuration
 public class RabbitConfig {
 
+    @Bean
+    public Queue directQueue(){
+        return new Queue("directQueue");
+    }
+
+    @Bean
+    public DirectExchange directExchange(){
+        return new DirectExchange("directExchange");
+    }
 
     @Bean
     public Queue commonQueue() {

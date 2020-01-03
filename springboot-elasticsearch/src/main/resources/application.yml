@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springboot-elasticsearch
+  data:
+    elasticsearch:
+      cluster-name: docker-cluster
+      cluster-nodes: 192.168.50.103:9300
+      repositories:
+        enabled: true
+  elasticsearch:
+    rest:
+      uris: ["http://192.168.50.103:9200"]
+server:
+  port: 8071
