@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author lxcy_
+ * @author kongdezhi
  */
 @Configuration
 public class RabbitConfig {
